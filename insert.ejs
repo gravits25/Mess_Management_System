@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Management System</title>
+
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>
+<body>
+
+    <div id="header">
+        <h5>INSERT</h5>
+      </div>
+
+    <div id="tables">
+        <label for="table">Choose a table</label>
+        <select name="table" id="table" form="form">
+            <optgroup label="Person">
+                <option value="student">Student</option>
+                <option value="staff">Staff</option>
+                <option value="outsider">Outsider</option>
+            </optgroup>
+            <option value="fees">Fees</option>
+            <option value="fees1">Fees1</option>
+            <option value="fees2">Fees2</option>
+            <option value="fees3">Fees3</option>
+            <option value="inventory">Inventory</option>
+            <option value="menu">Menu</option>
+            <option value="mess_staff">Mess Staff</option>
+            <optgroup label="Mess Staff">
+                <option value="manager">Manager</option>
+                <option value="distributer">Distributer</option>
+                <option value="cleaner">Cleaner</option>
+                <option value="cook">Cook</option>
+              </optgroup>
+            </select></option>
+        </select>
+        <form action="/insert/query" id="form" method="get">
+            <input type="submit" id="sub">
+        </form>
+    </div>
+
+    <h3><%= name%></h3>
+    
+    <!-- <div id="insert-box"> -->
+
+    <table style="border: 2px solid black" id="insert-table">
+        <form action="/insert/table?name=<%=name%>" method="post">
+            <% for (let i = 0; i < columns.length; i ++) { %>
+                <tr style="border: 2px solid black">
+                <th style="border: 1px solid"><label for="fname"><%= columns[i].name%></label>
+                    <% if( columns[i].name === "password") { %>
+                    <input type="password" name="<%= columns[i].name%>" style="border: 1px solid black"><br></th>
+                    <% } else if( columns[i].name === "dob" ) { %>
+                        <input type="date" name="<%= columns[i].name%>" style="border: 1px solid black"><br></th>
+                    <% } else { %>
+                        <input type="text" name="<%= columns[i].name%>" style="border: 1px solid black"><br></th>
+                    <% } %>
+                </tr>
+                    <% } %>
+                    <!-- <div> -->
+                    <tr class="insub">
+                        <td>
+                        <input type="submit" >
+                    </td>
+                    </tr>
+                        <!-- </div> -->
+        </form>
+    </table>
+
+</body>
+</html>

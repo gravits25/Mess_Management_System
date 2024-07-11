@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mess Management System</title>
+
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo Bhai"
+      rel="stylesheet"
+    />
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        
+        <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div id="header">
+      <h5>JAISWAL CANTEEN</h5>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div id="abc">
+          <a href="http://localhost:3000/"
+            ><img src="logojg.png" alt="" height="30px" width="30px"
+          /></a>
+
+          <!-- <a class="navbar-brand" href="#">JG</a> -->
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="http://localhost:3000/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Clients
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Our Clients</a></li>
+                <li><a class="dropdown-item" href="#">Customer Review</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Cuisines</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div id="xyz">
+      <div id="box1">
+        <!-- <img src="mess.jpeg" alt=""> -->
+        <div class="text">
+          <h3>Taste something fresh, taste the delicious.</h3>
+        </div>
+      </div>
+      <div id="box2">
+        <!-- <img src="mess.jpeg" alt=""> -->
+        <div class="text">
+          <h3>Filling every occasion with great food and service.</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="operation">
+      <button class="button"><a href="http://localhost:3000/display">Display</a></button><br />
+      <button class="button"><a href="http://localhost:3000/update">Update</a></button><br />
+      <button class="button"><a href="http://localhost:3000/insert">Insert</a></button><br />
+      <button class="button"><a href="http://localhost:3000/delete">Delete</a></button><br/>
+      <button class="button"><a href="http://localhost:3000/search">Search</a></button>
+      <button class="button"><a href="http://localhost:3000/adv">Query</a></button>
+    </div>
+
+    <!-- <div id="logo">
+      <img src="mess.jpeg" alt="">
+    </div> -->
+
+
+    <section class="contact section bd-container" id="contact">
+      <div class="contact__container bd-grid">
+          <div class="contact__data">
+              <span class="section-subtitle contact__initial">Let's talk</span>
+              <h2 class="section-title contact__initial">Contact us</h2>
+              <p class="contact__description">At Jaiswal Group, we thrive on the possibility of 'Challenge'. We believe in doing the unconventional and going against the tide to conceptualize and develop ideas that people did not think were possible.</p>
+          </div>
+
+          <div class="contact__button">
+              <a href="#" class="button">Contact us now</a>
+          </div>
+      </div>
+  </section>
+
+
+
+    <footer class="footer section bd-container">
+      <div class="footer__container bd-grid">
+          <div class="footer__content">
+              <a href="#" class="footer__logo">Jaiswal Canteen</a>
+              <span class="footer__description">Student Mess</span>
+              <div>
+                  <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                  <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                  <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+              </div>
+          </div>
+
+          <div class="footer__content">
+              <h3 class="footer__title">Services</h3>
+              <ul>
+                  <li><a href="#" class="footer__link">Canteen</a></li>
+                  <li><a href="#" class="footer__link">Food Delivey</a></li>
+                  <li><a href="#" class="footer__link">Lunch Services</a></li>
+                  <!-- <li><a href="#" class="footer__link">Party Services</a></li> -->
+              </ul>
+          </div>
+
+          <div class="footer__content">
+              <h3 class="footer__title">Information</h3>
+              <ul>
+                  <!-- <li><a href="#" class="footer__link">Event</a></li> -->
+                  <li><a href="#" class="footer__link">Contact us</a></li>
+                  <li><a href="#" class="footer__link">Privacy policy</a></li>
+                  <li><a href="#" class="footer__link">Terms of services</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__content">
+              <h3 class="footer__title">Address</h3>
+              <ul>
+                  <li>IIITV-ICD</li>
+                  <li>Educational Hub</li>
+                  <li>Kevdi, Diu</li>
+                  <li>canteenjaiswaldiu@gmail.com</li>
+              </ul>
+          </div>
+      </div>
+
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script src="assets/js/main.js"></script>
+
+
+  </body>
+</html>
