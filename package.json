@@ -1,0 +1,21 @@
+{
+  "name": "dbms-project",
+  "version": "1.0.0",
+  "description": "Mess management system",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Gaurav Tripathi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.2.3",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7"
+  }
+}
